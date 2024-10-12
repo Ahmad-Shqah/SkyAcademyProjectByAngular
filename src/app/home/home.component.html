@@ -1,0 +1,76 @@
+
+            <div id="main">
+                <!-- top message -->
+                <div class="WelcomeBack">
+                    <h3 >Welcome Back Hazem! Here are your latest updates.</h3>
+                    <div ><a  (click)="RefuseRequest()" class="ButtonInside">New Request</a></div>
+                    </div>
+                            <!--  two green cards-->
+                            <div class="gContainer">
+                                <div style="display: inline-block;">
+                                    <app-user-data></app-user-data> 
+                                </div>
+                                
+                                
+                                <div class="greens">    
+                                    <div class="card">
+                                    <div class="icon-section">
+                                        <i class="fa-solid fa-clipboard-list fa-3x" ></i>
+                                        <p class="card-title">Vacation<br>Requests</p>
+                                    </div>
+                                    <div class="count-section">
+                                        <p class="count">10</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icon-section">
+                                        <i class="fa-solid fa-clipboard-list fa-3x"></i>
+                                        <p class="card-title">Level<br>Requests</p>
+                                    </div>
+                                    <div class="count-section">
+                                        <p class="count">10</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            
+                            </div>
+
+                            <div>
+                                <h5 style="font-family:Arial; font-weight: bold; font-size: medium; margin-top: 25px; margin-bottom: 15px; ">Latest news :</h5>
+                            </div>
+
+                    <app-news></app-news>
+
+                       <!-- Requests section -->
+<div class="CardsMainBox">
+    <div class="header-section">
+        <div class="title-icon">
+            <i class="fa-solid fa-list fa-2x icon"></i>
+            <p>Vacation Requests</p>
+        </div>
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" id="search-input" class="form-control" placeholder="Search by name,salary,duration" [formControl]="searchControl">
+            </form>
+        </div>
+    </div>
+    <hr class="divider">
+    
+    <!-- Cards for holiday requests -->
+    <div class="card-container" >
+        <app-card *ngFor="let request of filteredRequests() | slice:0:3 "
+        [name]="request.name"
+        [submittedOn]="request.submittedOn "
+        [duration]="request.duration | lowercase"
+        [salary]="request.salary">
+    </app-card>
+    </div>
+    
+    <!-- View More Button -->
+    <div class="view-more-section">
+        <a routerLink="/vacations" routerLinkActive="active" class="view-more-btn"> View More > </a>
+    </div>
+</div>
+            </div>
+     

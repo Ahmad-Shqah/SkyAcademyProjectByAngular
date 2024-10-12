@@ -1,0 +1,92 @@
+/* Card styling */
+.card {
+    width: 100%;
+    height: 450px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 20px;
+    border-radius: 0%;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Approve button styling */
+.card .approve-btn, .card .decline-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.card .approve-btn {
+    border: 2px solid #0c8635;
+    background-color: #0c8635;
+    padding: 3px 25px; 
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Approve button hover effect */
+.card .approve-btn:hover {
+    background-color: #0a732d; 
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
+/* Decline button styling */
+.card .decline-btn {
+    padding: 3px 25px; 
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid #0c8635;
+    color: #0c8635;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Decline button hover effect */
+.card .decline-btn:hover {
+    background-color: #0c8635;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main card container box */
+.CardsMainBox {
+    background-color: #f8f5f5;
+    box-shadow: 0 3px 3px 0 rgb(75, 75, 75);
+    margin: auto;
+    border-radius: 15px;
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;
+}
+
+/* Profile image styling */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* General text styling */
+.text {
+    color: rgb(192, 192, 192);
+    margin: 10px 0;
+}
+
+

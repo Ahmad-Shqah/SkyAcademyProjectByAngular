@@ -1,0 +1,113 @@
+<div style="margin: 20px;">
+    <app-profile-box></app-profile-box>
+
+    <!-- History Section -->
+    <section class="history-section">
+        <!-- Upper Level: Icon and Title -->
+        <div class="history-header">
+            <div style="display: flex; align-items: center;">
+                <i style="color: green;" class="fa-solid fa-clock-rotate-left fa-2x"></i>
+                <span style="margin-left: 15px; font-weight: 500; font-size: x-large;">History</span>
+            </div>
+            
+        </div>
+        <hr class="divider">
+        <!-- Lower Level: Cards for history -->
+        <div class="history-cards">
+            <!-- History Card 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Annual Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+            <!-- History Card 2 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Annual Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+            <!-- History Card 3 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>sick Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+            <!-- History Card 4 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Annual Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+            <!-- History Card 5 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Non paid Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+           <!-- History Card 6 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Annual Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+             <!-- History Card 7 -->
+             <div class="card">
+                <div class="card-content">
+                    <h3>Non paid Vacation</h3>
+                    <p><br>2/3/2023 - 10/3/2023   <span style="font-weight: bold;"> 8 days </span> </p>
+                    <p>Approved by: Hazem Azmi</p>
+                </div>
+            </div>
+        </div>
+          <!-- View More Link -->
+          <div class="view-more-section">
+            <a routerLink="/vacations" routerLinkActive="active" class="view-more-btn">View More ></a>
+        </div>
+
+    </section>
+
+  <!-- Requests Section -->
+<section class="requests-section">
+    <!-- Upper Level: Icon and Title -->
+    <div class="requests-header">
+        <div class="header-left">
+            <i style="color: #0c8635;" class="fa-solid fa-list fa-2x"></i>
+            <p>Pending Requests</p>
+        </div>
+    </div>
+
+    <!-- Lower Level: Cards for pending requests -->
+    <div class="requests-cards">
+        <div *ngFor="let request of pendingRequests" class="card">
+            <div class="card-content">
+                <img src="assets\req.png" class="card-img">
+                <h3>{{ request.name }}</h3>
+                <p><strong>Submitted On:</strong> <br>{{ request.submittedOn }}</p>
+                <p><strong>Duration:</strong> <br>{{ request.duration }}</p>
+                <p><strong>Currently At:</strong> <br> <span style="color: #0c8635;">{{ request.currentlyAt }}</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- View More Link -->
+    <div class="view-more-section">
+        <a routerLink="/vacations" routerLinkActive="active" class="view-more-btn">View More ></a>
+    </div>
+</section>
+
+
+   
+</div>
+    <!-- Profile Section -->
+ 

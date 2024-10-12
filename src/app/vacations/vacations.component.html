@@ -1,0 +1,34 @@
+<div class="CardsMainBox">
+    <div class="header-section">
+        <div class="title-icon">
+            <i class="fa-solid fa-list fa-2x icon"></i>
+            <p>Vacation Requests</p>
+        </div>
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" id="search-input" class="form-control" placeholder="Search by name,salary,duration" [formControl]="searchControl">
+            </form>
+        </div>
+    </div>
+    <hr class="divider">
+    
+    
+    <!-- Cards for holiday requests , i used lowercase pipe as example of style pipes-->
+    <div class="card-container">
+        <app-card *ngFor="let request of filteredRequests() "
+        [name]="request.name"
+        [submittedOn]="request.submittedOn "
+        [duration]="request.duration | lowercase"  
+        [salary]="request.salary">
+    </app-card>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button class="prev">&lt;</button> <!-- Left arrow -->
+        <button class="page active">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="next">&gt;</button> <!-- Right arrow -->
+    </div>
+</div>

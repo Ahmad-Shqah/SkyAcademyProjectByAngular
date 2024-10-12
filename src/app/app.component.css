@@ -1,0 +1,63 @@
+.body {
+    font-family: Arial;
+    margin: 20px auto; /*  margin around the main container */
+    padding: 0;
+    background-color: #ffffff;
+    max-width: 95%; /* Restricts width to be a bit smaller than the page */
+    display: flex;
+    flex-direction: column; 
+    
+}
+/* the main menu*/
+.header {
+    background-color: #0c8635;
+    padding: 8px 18px;
+    margin: 0;
+    position: relative; 
+    z-index: 1000; 
+
+}
+.MainBar {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 1000; 
+}
+.MainBar-List {
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+}
+.MainBar-List.left {
+    margin-left: 1px;
+}
+.MainBar-List.right {
+    margin-right: 1px;
+}
+.MainBar-List li {
+    margin: 0 15px;
+}
+.choose:hover {
+    font-weight: bold;
+}
+.MainBar-List a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    pointer-events: auto; /* Ensure clicks are not blocked */
+}
+/*********************************************************************************/
+#main{
+    align-content: center;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+

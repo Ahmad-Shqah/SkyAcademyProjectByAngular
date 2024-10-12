@@ -1,0 +1,214 @@
+.history-section {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(230, 231, 231, 0.466);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.requests-section {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(230, 231, 231, 0.466);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Section styles */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upper-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.new-request-btn-container {
+    margin-left: auto;
+}
+
+.new-request-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-request-btn:hover {
+    background-color: darkgreen;
+}
+
+/* Lower Level (Icons and Stats) */
+.lower-level {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    font-size: 14px;
+}
+
+.icon-and-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* space between icon and text */
+}
+
+.stat-item i {
+    font-size: 18px;
+    color: gray;
+}
+
+.stat-item p {
+    margin: 0;
+    color: gray;
+}
+
+.stat-item strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: black;
+}
+
+.history-header p, .requests-header p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Cards */
+.history-cards {
+    align-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.requests-cards {
+    align-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+ 
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center the content horizontally */
+    padding: 20px;
+}
+/* Hover effect for the card */
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card-img {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; /* Add margin below the image for spacing */
+}
+
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    
+}
+
+.divider {
+    border: 1px solid #848484;
+    margin: 10px 0;
+}
+
+.requests-header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.requests-header .header-left i {
+    color: 0c8635; /* Set icon color */
+}
+
+.requests-header .header-left p {
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.view-more-section {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.view-more-btn {
+    color: #05792b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more-btn:hover {
+    font-weight: bold;
+    background-color: #0c8635;
+    color: white;
+    cursor: pointer;
+}
+

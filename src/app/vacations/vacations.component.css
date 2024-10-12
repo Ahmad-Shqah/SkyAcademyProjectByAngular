@@ -1,0 +1,87 @@
+.CardsMainBox {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Card container using CSS Grid */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title-icon {
+    display: flex;
+    align-items: center;
+}
+
+.title-icon p {
+    margin-top: 0;
+    margin-left: 15px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.icon {
+    color: #0c8635;
+}
+
+.search-container {
+    text-align: right;
+}
+
+.search-form input {
+    border-radius: 20px;
+    padding: 6px 12px;
+    width: 250px;
+    border: 1px solid #0c8635;
+}
+
+.divider {
+    border: 1px solid #848484;
+    margin: 10px 0;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button.active {
+    background-color: #0a5c0a;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+}
+
+.pagination button:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+}

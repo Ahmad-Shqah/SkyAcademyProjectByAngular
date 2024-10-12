@@ -1,0 +1,34 @@
+/* src/app/news/news.component.css */
+
+.carousel {
+  width: 100%; 
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.carousel-inner img {
+  max-height: 200px; 
+  width: 100%; 
+  object-fit: cover; /* Maintain aspect ratio */
+}
+.custom-navigation-dots {
+  text-align: center; /* Center the dots */
+  margin-top: 10px;  /* Space above the dots */
+}
+
+.custom-navigation-dots button {
+  height: 15px; /* Set height for the circles */
+  width: 15px; /* Set width for the circles */
+  margin: 0 5px; /* Spacing between dots */
+  background-color: #bbb; /* Default background color */
+  border-radius: 50%; /* Make them circular */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-navigation-dots :hover {
+  background-color: #1e6d36; 
+  transform: scale(1.05); 
+  cursor: pointer; 
+}

@@ -1,0 +1,78 @@
+.box {
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background-color: rgba(230, 231, 231, 0.466);
+    padding: 20px; /* Padding adjusted for better appearance */
+    height: 200px;
+    position: relative; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+.user-name {
+    margin: 0;
+    font-size: 18px;
+}
+.user-role {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: gray;
+}
+.button-section {
+    margin-top: 10px;
+    position: absolute; /* Absolute positioning */
+    top: 15px; /* Adjust top position */
+    right: 15px; /* Adjust right position */
+}
+.btn-view-profile {
+    padding: 3px 25px; 
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid #0c8635;
+    color: #0c8635;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-view-profile:hover {
+    background-color: #0c8635;
+    color: white;
+    cursor: pointer;
+}
+.info-section {
+    display: flex; /* Horizontal alignment */
+    justify-content: flex-start; /* Align to the left */
+    gap: 20px; /* Space between items */
+    margin-top: auto; /* Push the info section to the bottom */
+}
+.info-item {
+    
+    display: flex; /* Use flex for horizontal alignment */
+    align-items: center; /* Center align the icon and text */
+}
+.info-item i {
+    color: rgb(150, 148, 148);
+    margin-right: 15px; /* Space between icon and text */
+    font-size: 40px; /* Set a fixed size */
+    height: 50px; /* Match the height */
+    width: 30px; /* Match the width */
+    vertical-align: middle; /* Aligns the icon with the text */
+}
+@media only screen and (max-width: 1100px) {
+   
+    .box{
+        width: 100%;
+    }
+}
